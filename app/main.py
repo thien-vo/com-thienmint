@@ -1,8 +1,15 @@
-# views.py
+#main.py
 
-from flask import render_template
+# [START app]
+import logging
 
-from app import app
+# [START imports]
+from flask import Flask, render_template, request
+# [END imports]
+
+# [START create_app]
+app = Flask(__name__)
+# [END create_app]
 
 @app.route('/')
 def index():

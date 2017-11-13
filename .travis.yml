@@ -29,10 +29,7 @@ script:
 # Run E2E tests here
 before_deploy:
   # before deployment
-  - provider: script
-    script: echo "nothing in before_deploy"
-    on:
-      branch: platform/travis-ci
+  - echo "nothing in before_deploy"
 deploy:
   # deploy master to production
   - provider: script

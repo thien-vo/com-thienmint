@@ -16,7 +16,7 @@ echo "CURRENT PATH: `pwd`"
 # Set the correct project to deploy to
 if [ "$1" == "master" ]; then
   echo "Authenticating with master project"
-  gcloud auth activate-service-account --key-file prod-client-secret.json
+  gcloud auth activate-service-account --key-file client-secret.json
   echo "Set deployment to master"
   gcloud config set project python-181206
 
@@ -33,29 +33,3 @@ if [ "$1" == "master" ]; then
  cd ..
  echo "Back in `pwd` directory now"
 fi
-
-if [ "$1" == "dev" ]; then
-  echo "Authenticating with for deployment of dev project"
-  gcloud auth activate-service-account --key-file prod-client-secret.json
-  echo "Set deployment to dev"
-  gcloud config set project esportguru-181021
-
-  cd idb
-   echo "Inside `pwd` now"
-      echo "---- Building artifact"
-      npm install
-      npm run build
-      echo "---- Done building artifact"
-      sleep 5
-      echo "---- SCP to CE host"
-      gcloud compute scp build/ dev-frontend:/home/tvo --recurse --zone=us-central1-c
-      echo "---- Done copying to remote"
-      sleep 10
-      echo "---- Opening remote file"
-      gcloud compute ssh dev-frontend --command=". /home/tvo/deploy_apache.sh" --zone=us-central1-c
-      echo "---- Done opening remote file"
-      sleep 10
-   cd ..
-   echo "Back in `pwd` directory now"
-fi
-

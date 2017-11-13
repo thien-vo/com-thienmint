@@ -6,7 +6,7 @@ echo "CURRENT PATH: `pwd`"
 
 # [START auth]
 # Decrypt the credentials we added to the repo using the key we added with the Travis command line tool
-  openssl aes-256-cbc -K $encrypted_47749fd3305f_key -iv $encrypted_47749fd3305f_iv-in credentials.tar.gz.enc -out credentials.tar.gz -d
+  openssl aes-256-cbc -K $encrypted_47749fd3305f_key -iv $encrypted_47749fd3305f_iv -in credentials.tar.gz.enc -out credentials.tar.gz -d
 
   tar -xzf authentications.tar.gz
   echo "MAKING SURE THAT THE KEYS ARE THERE"

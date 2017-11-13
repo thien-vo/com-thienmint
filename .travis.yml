@@ -28,7 +28,9 @@ script:
 - echo "No testing for now."
 # Run E2E tests here
 before_deploy:
-  - echo "nothing in before_deploy"
+  # before deployment
+  - provider: script
+    script: echo "nothing in before_deploy"
 deploy:
   # deploy master to production
   - provider: script

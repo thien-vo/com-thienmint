@@ -31,6 +31,8 @@ before_deploy:
   # before deployment
   - provider: script
     script: echo "nothing in before_deploy"
+    on:
+      branch: platform/travis-ci
 deploy:
   # deploy master to production
   - provider: script

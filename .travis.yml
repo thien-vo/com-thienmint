@@ -34,5 +34,5 @@ deploy:
   - provider: script
     script: scripts/deploy.sh master
     on:
-      branch: platform/travis-ci
+      branch: master
 

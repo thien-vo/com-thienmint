@@ -14,7 +14,6 @@ app = Flask(__name__, static_url_path='/static')
 # [START routing]
 @app.route('/')
 def home():
-
     return render_template("home.html")
 
 @app.errorhandler(404)

@@ -9,6 +9,29 @@
             <li><a href="https://www.linkedin.com/in/thienqvo"><i class="fa fa-linkedin"></i></a></li>
             <li><a href="https://www.github.com/thienmint"><i class="fa fa-github"></i></a></li>
         </ul>
+        <ul class="rslides" id="slider3">
+            {% with quotes=[
+            {
+                'text': '"If we knew each other\'s secrets, what comfort we should find."',
+                'person': 'John Churton Collins'
+            },
+            {
+                'text': '"Someday this pain will be useful to you."',
+                'person': 'Peter Cameron'
+            },
+            {
+                'text': '"Computer always do what they tell you to do"',
+                'person': 'Mark Zuckerberg'
+            },
+            ]%}
+                {% for quote in quotes %}
+                    <li class="slider-info">
+                        <p> {{ quote['text'] }} </p>
+                        <p> - {{ quote['person'] }}</p>
+                    </li>
+                {% endfor %}
+            {% endwith %}
+        </ul>
     </div>
 </div>
 

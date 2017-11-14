@@ -18,7 +18,7 @@
 
                     <h3>University of Texas at Austin</h3>
                     <p class="info">B.S. in Computer Science<span>&bull;</span> <em class="date">May 2018</em><span>&bull;</span> <em class="date">3.8 GPA</em></p>
-                    Some of the relevant courses that I've taken:
+                    Relevant courses:
                     <div class="row">
                         <div class="six columns">
                             <li>Data Structure</li>
@@ -58,10 +58,13 @@
                 <div class="twelve columns">
 
                     <h3>MaxPoint Interactive Inc.</h3>
-                    <p class="info">Software Engineer Intern <span>&bull;</span> <em class="date">May 2017 - Present</em></p>
+                    <p class="info">Software Engineer Intern <span>&bull;</span> <em class="date">May 2017 - November 2017</em></p>
 
                     <p>
-                        Convert MapReduce jobs to Spark jobs.
+                        <li>Rework MapReduce jobs that use Java/Cascading to using Scala/Spark </li>
+                        <li>Ensure backward-compatibility of new jobs with older jobs that consume the data</li>
+                        <li>Write extensive robust unit tests for each rework to ensure high code coverage</li>
+                        <li>Measure and evaluate performance improvements of the reworks</li>
                     </p>
 
                 </div>
@@ -76,7 +79,9 @@
                     <p class="info">Student Web Developer <span>&bull;</span> <em class="date">Oct 2016 - May 2017</em></p>
 
                     <p>
-                        Create templates and web widgets
+                        <li>Add search by GET queries for an existing dynamic search page</li>
+                        <li>Implemented several class profile PSD templates into HTML web pages</li>
+                        <li>Created a template to speed up the process of implementing class profile pages</li>
                     </p>
 
                 </div>
@@ -97,19 +102,12 @@
         </div>
 
         <div class="nine columns main-col">
-
-            <p>I do platform, database, and big data.
-            </p>
-
             <div class="bars">
 
                 <ul class="skills">
-                    <li><span class="bar-expand photoshop"></span><em>Spark</em></li>
-                    <li><span class="bar-expand illustrator"></span><em>Scala</em></li>
-                    <li><span class="bar-expand wordpress"></span><em>Python</em></li>
-                    <li><span class="bar-expand css"></span><em>Java</em></li>
-                    <li><span class="bar-expand html5"></span><em>C++</em></li>
-                    <li><span class="bar-expand jquery"></span><em>MySQL</em></li>
+                    {% for skill in skill_list %}
+                        <li><span class="bar-expand" style="width: {{ skill['mastery'] }}"></span><em>{{ skill['name'] }}</em></li>
+                    {% endfor %}
                 </ul>
 
             </div><!-- end skill-bars -->

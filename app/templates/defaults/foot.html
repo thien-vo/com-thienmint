@@ -36,3 +36,32 @@
 <script src="{{ url_for('static', filename='js/jquery.fittext.js')}}"></script>
 <script src="{{ url_for('static', filename='js/magnific-popup.js')}}"></script>
 <script src="{{ url_for('static', filename='js/init.js')}}"></script>
+
+<!-- Reponsive Sliders
+================================================== -->
+<script src="/static/js/responsiveslides.min.js"></script>
+<script>
+    $(function() {
+        $(".rslides").responsiveSlides();
+    });
+</script>
+<script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+        // Slideshow 4
+        $("#slider3").responsiveSlides({
+            auto: true,
+            pager:false,
+            nav:false,
+            speed: 500,
+            namespace: "callbacks",
+            before: function () {
+                $('.events').append("<li>before event fired.</li>");
+            },
+            after: function () {
+                $('.events').append("<li>after event fired.</li>");
+            }
+        });
+
+    });
+</script>

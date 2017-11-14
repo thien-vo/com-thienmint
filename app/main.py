@@ -13,10 +13,14 @@ app = Flask(__name__, static_url_path='/static')
 
 # [START routing]
 @app.route('/')
-def index():
+def home():
+
     return render_template("home.html")
 
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template("error.html")
 # [END routing]
+
+if __name__ == '__main__':
+    app.run()

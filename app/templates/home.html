@@ -1,8 +1,15 @@
+{% with title='Home | Thien Vo' %}
 {% include 'defaults/head.html' %}
+{% endwith %}
+
+{% import 'home/navbar.html' as home_navbar %}
+{% import 'home/banner.html' as home_banner %}
+
+{% with navbar=home_navbar, banner=home_banner %}
+{% include 'defaults/header.html' %}
+{% endwith%}
 
 <body>
-
-{% include 'defaults/header.html' %}
 
 {% include 'home/about.html' %}
 

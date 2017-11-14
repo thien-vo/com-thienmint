@@ -16,6 +16,12 @@ app = Flask(__name__, static_url_path='/static')
 def home():
     return render_template("home.html")
 
+
+@app.route('/send_message', methods=['GET', 'POST'])
+def send_message():
+    return "Gotcha2"
+
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template("error.html")

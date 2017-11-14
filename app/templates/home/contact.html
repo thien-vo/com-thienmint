@@ -24,7 +24,7 @@
         <div class="eight columns">
 
             <!-- form -->
-            <form action="" method="post" id="contactForm" name="contactForm">
+            <form method="post" id="contactForm" name="contactForm">
                 <fieldset>
 
                     <div>
@@ -44,14 +44,15 @@
 
                     <div>
                         <label for="contactMessage">Message <span class="required">*</span></label>
-                        <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                        <textarea cols="50" rows="8" id="contactMessage" name="contactMessage"></textarea>
                     </div>
 
                     <div>
                         <button class="submit">Submit</button>
+{#                        <input type="submit" class="submit" value="Submit"/>#}
                         <span id="image-loader">
-                        <img alt="" src="/static/images/loader.gif">
-                     </span>
+                            <img alt="" src="/static/images/loader.gif">
+                        </span>
                     </div>
 
                 </fieldset>

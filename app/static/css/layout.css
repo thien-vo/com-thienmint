@@ -919,6 +919,10 @@ call-to-action .button {
    border: none;
 }
 
+textarea#contactMessage {
+    resize: none;
+    min-height: 0;
+}
 
 /* ------------------------------------------------------------------ */
 /* i. Footer

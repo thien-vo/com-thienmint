@@ -6,7 +6,7 @@
 
         <div class="three columns">
 
-            <img class="profile-pic" src="/static/images/profilepic.jpg" alt="" />
+            <img class="profile-pic" src="/static/images/profilepic.jpg" alt="Thien's profile picture" />
 
         </div>
 
@@ -14,8 +14,25 @@
 
             <h2>About Me</h2>
 
-            <p>I'm a graduating Senior CS student at UT Austin. Frankly, I don't have any bias toward any specific
-                specialization, but I have experience working with web development, databases, and recently big data.
+            <p>I'm a graduating Senior CS student at UT Austin. I had experience working with web development, database,
+                and most recently, I've gained exposure to big data field through my summer internship.
+                <br/>
+                <br/>
+                Over the summer and fall semester, I interned at MaxPoint, an internet marketing company, as software engineer working on
+                their platform team. I was responsible for converting several existing MapReduce jobs that use Java/Cascading
+                stack to use Scala/Spark stack instead. This helped improved performance while reducing resource consumption
+                at the same time. Through the project, I learned to pick up new technologies quickly like Python, Scala, Spark,
+                Jenkins CI, and some other unique in-house development tools designated only for MaxPoint.
+                <br/>
+                <br/>
+                Before that, I was working as Student Web Developer for McCombs School of Business at UT Austin. I was responsible
+                for converting PSD designs into HTML web pages. Since some of these tasks were repetitive, I also created a
+                template design for everyone else who might work on the same task in the future. This template cut down the
+                process of creating these HTML web pages from several hours into less than half an hour.
+                <br/>
+                <br/>
+                Now as a graduating senior, I'm looking for a full-time opportunity. You can check out my resume and more details
+                about each of my past project here on this site. Please feel free to contact me for any further information!
             </p>
 
             <div class="row">
@@ -33,8 +50,10 @@
 
                 <div class="columns download">
                     <p>
-                        <a href="#" class="button"><i class="fa fa-eye"></i>View Resume</a>
-                        <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                        <a href="{{ url_for('static', filename='documents/resume.pdf')}}" class="button">
+                            <i class="fa fa-eye"></i>View Resume</a>
+                        <a href="{{ url_for('static', filename='documents/resume.pdf')}}" class="button" download="resume.pdf">
+                            <i class="fa fa-download"></i>Download Resume</a>
                     </p>
                 </div>
             </div> <!-- end row -->

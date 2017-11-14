@@ -19,7 +19,12 @@ def home():
 
 @app.route('/send_message', methods=['GET', 'POST'])
 def send_message():
-    return "Gotcha2"
+    print(request.form['contactName'])
+    print(request.form['contactEmail'])
+    print(request.form['contactSubject'])
+    print(request.form['contactMessage'])
+    # TODO: Implement email
+    return "Gotcha"
 
 
 @app.errorhandler(404)

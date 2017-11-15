@@ -2,6 +2,13 @@ runtime: python27
 api_version: 1
 threadsafe: true
 
+libraries:
+- name: ssl
+  version: latest
+
+env_variables:
+  GAE_USE_SOCKETS_HTTPLIB : 'true'
+
 # [START handlers]
 handlers:
 - url: /static

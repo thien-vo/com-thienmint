@@ -1,10 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% with title=title|default("Entry | Blog", true) %}
+    {% include 'defaults/head.html' %}
+{% endwith %}
 
+{% import 'blog/swe/banner.html' as home_banner %}
+
+{% with banner=home_banner %}
+    {% include 'defaults/header.html' %}
+{% endwith%}
+
+<body>
+Blog Entry
 </body>
+
+
+{% include 'defaults/foot.html' %}
 </html>

@@ -34,6 +34,13 @@ def blog():
     return render_template("blog.html")
 
 
+@app.route('/blog/swe')
+@app.route('/blog/swe/<week>')
+def swe(week=None):
+    return render_template('blog/swe/template.html')
+
+
+
 @app.route('/send_message', methods=['POST'])
 def send_message():
     if email_username is None or email_password is None:

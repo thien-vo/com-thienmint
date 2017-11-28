@@ -1,0 +1,34 @@
+<div class="row banner">
+    <div class="banner-text">
+        <h1 class="responsive-headline">Blog</h1>
+        <h3><span>{{ week|default("Week : 00/00-00/00") }}</span></h3>
+        <hr />
+        <ul class="rslides" id="slider3">
+            {% with quotes=[
+            {
+                'text': '"If we knew each other\'s secrets, what comfort we should find."',
+                'person': 'John Churton Collins'
+            },
+            {
+                'text': '"Someday this pain will be useful to you."',
+                'person': 'Peter Cameron'
+            },
+            {
+                'text': '"Computer always do what they tell you to do"',
+                'person': 'Mark Zuckerberg'
+            },
+            ]%}
+                {% for quote in quotes %}
+                    <li class="slider-info">
+                        <p> {{ quote['text'] }} </p>
+                        <p> - {{ quote['person'] }}</p>
+                    </li>
+                {% endfor %}
+            {% endwith %}
+        </ul>
+    </div>
+</div>
+
+<p class="scrolldown">
+    <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+</p>

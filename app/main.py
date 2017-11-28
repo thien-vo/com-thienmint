@@ -59,5 +59,7 @@ def page_not_found(e):
     return render_template("error.html")
 # [END routing]
 
+
 if __name__ == '__main__':
+    app.config['TEMPLATES_AUTO_RELOAD'] = True
     app.run()

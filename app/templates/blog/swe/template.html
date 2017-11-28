@@ -9,7 +9,20 @@
 {% endwith%}
 
 <body>
-Blog Entry
+{% for row in entry_infos %}
+        <p> {{ row['header'] }} </p>
+        <p> - {{ row['text'] }}</p>
+{% endfor %}
+    <section id="swe-entry"}>
+        <div class="swe-post"}>
+            {% with entry_infos=entry_infos|default([{'header': 'Default Header', 'text': 'Default Text'}], true) %}
+                {% for row in entry_infos %}
+                    <h2> {{ row['header'] }} </h2>
+                    <p> {{ row['text'] }}</p>
+                {% endfor %}
+            {% endwith %}
+        </div>
+    </section>
 </body>
 
 

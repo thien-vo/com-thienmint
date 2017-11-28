@@ -236,6 +236,16 @@ ul#nav li.current a {
     color: #F06000;
 }
 
+#site-home {
+    float: left;
+    font-weight: bolder;
+    font-size: larger;
+    font-family: "Liberation Serif";
+}
+
+#site-opts {
+}
+
 /* ------------------------------------------------------------------ */
 /* c. About Section
 /* ------------------------------------------------------------------ */

@@ -24,6 +24,16 @@ def home():
     return render_template("home.html")
 
 
+@app.route('/demo')
+def demo():
+    return render_template("demo.html")
+
+
+@app.route('/blog')
+def blog():
+    return render_template("blog.html")
+
+
 @app.route('/send_message', methods=['POST'])
 def send_message():
     if email_username is None or email_password is None:

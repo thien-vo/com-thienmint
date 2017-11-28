@@ -2,3 +2,17 @@
     {% include 'defaults/head.html' %}
 {% endwith %}
 
+
+{% import 'blog/banner.html' as home_banner %}
+
+{% with banner=home_banner %}
+    {% include 'defaults/header.html' %}
+{% endwith%}
+
+<body>
+{
+</body>
+
+
+{% include 'defaults/foot.html' %}
+</html>

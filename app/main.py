@@ -4,7 +4,12 @@
 import logging, traceback
 from flask import Flask, render_template, request, redirect, url_for
 from flask_mail import Mail, Message
+
+# Custom stuff
 from email_info import get_info
+from blog_parser import parse_swe_blog
+# Regex
+import re
 # [END imports]
 
 # [START create_app]
@@ -37,7 +42,26 @@ def blog():
 @app.route('/blog/swe')
 @app.route('/blog/swe/<week>')
 def swe(week=None):
-    return render_template('blog/swe/template.html')
+    if week is None:
+        return page_not_found(NotImplementedError)
+
+    try:
+        f = open('static/swe-entries/{0}.txt'.format(str(week)))
+    except IOError:
+        return page_not_found(IOError)
+    m = re.search(r'(w)(\d+)', str(week))
+    num_week = int(m.group(2))
+
+    data = f.readlines()
+    headers, texts = parse_swe_blog(data)
+    entry_infos = [{
+        'header': h,
+        'text': t} for (h,t) in zip(headers, texts)]
+
+    return render_template('blog/swe/template.html',
+                           title='SWE: Week {0} | Blog'.format(num_week),
+                           entry_infos=entry_infos,
+                           week="Week {0}".format(num_week))
 
 
 

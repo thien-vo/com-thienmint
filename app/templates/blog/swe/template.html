@@ -2,20 +2,16 @@
     {% include 'defaults/head.html' %}
 {% endwith %}
 
-{% import 'blog/swe/banner.html' as home_banner %}
+{% import 'blog/swe/banner.html' as home_banner with context%}
 
 {% with banner=home_banner %}
     {% include 'defaults/header.html' %}
 {% endwith%}
 
 <body>
-{% for row in entry_infos %}
-        <p> {{ row['header'] }} </p>
-        <p> - {{ row['text'] }}</p>
-{% endfor %}
     <section id="swe-entry"}>
         <div class="swe-post"}>
-            {% with entry_infos=entry_infos|default([{'header': 'Default Header', 'text': 'Default Text'}], true) %}
+            {% with entry_infos= entry_infos|default([{'header': 'Default Header', 'text': 'Default Text'}], true) %}
                 {% for row in entry_infos %}
                     <h2> {{ row['header'] }} </h2>
                     <p> {{ row['text'] }}</p>

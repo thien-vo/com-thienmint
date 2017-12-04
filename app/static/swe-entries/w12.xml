@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<entry>
+    <title description="11/13 - 11/19">Week 12</title>
+    <content>
+        <row>
+            <header>What did you do this past week?</header>
+            <text>
+                This past week, I spent a lot of time at work investigating an size inflation issues on the data that is
+                newly produced by our new preferable technologies stack (Scala/Spark instead of Java/Cascading).
+                Surprisingly enough, it had to do with the ordering of data before it is being fed to a compressor. We
+                still don't know how Cascading figured out the optimal ordering of data or how Spark's shuffling of data
+                affecting the compression effectiveness. Although I haven't been able to resolve these issues before I
+                left for good on Friday, my mentor told me that my finding could help save a lot of money for the
+                company because they can go bac to old gigantic data sets that are just taking up a lot of space and
+                reduce the size. Even a small fraction reduction could mean thousands, if not hundred of thousands, of
+                dollars.
+            </text>
+        </row>
+        <row>
+            <header>What's in your way?</header>
+            <text>
+                Since I've been working on my internship mostly over the past week, I still have a lot of homework and
+                projects for school to start on. Specifically, I will have to refactor my backend code for SWE and help
+                my frontend person to refactor a lot of the frontend code as well.
+            </text>
+        </row>
+        <row>
+            <header>What will you do next week?</header>
+            <text>
+                For SWE, I will be refactoring code and figure out a meaningful visualization of another group's data.
+                For algorithm class, I will have to finish the NP-Complete homework before taking off for the break. For
+                data mining, I might consider starting on it early, but if I end up not starting on the last project, I
+                will still have 2 full weeks to do it after Thanksgiving.
+            </text>
+        </row>
+        <row>
+            <header>What's my experience of the class?</header>
+            <text>
+                This is where what I learned in OOP repeat in SWE. It's quite interesting to know a lot of the material
+                already with inheritance and polymorphism from OOP, and as Prof Downing go over in SWE, I was able to
+                refine my understanding of the subject.
+            </text>
+        </row>
+        <row>
+            <header>What's my pick-of-the-week or tip-of-the-week?</header>
+            <text>
+                My pick-of-the-week is an app called Automate on Android. This app allow you to make smart pipeline of
+                phone actions. For example, when leaving my house's wifi network range, my phone will disable wifi
+                automatically to save battery and prevent my phone from connecting to random public networks. Whenever
+                I'm within range of UT campus, it will automatically enable wifi and attempts to connect to UTexas
+                network. There are a lot more that you can do with it!
+            </text>
+        </row>
+    </content>
+</entry>

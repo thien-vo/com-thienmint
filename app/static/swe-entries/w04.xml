@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<entry>
+    <title description="09/18 - 09/24">Week 4</title>
+    <content>
+        <row>
+            <header>What did you do this past week?</header>
+            <text>
+                This past week, I didn't do a lot. I spent a lot of time playing video games. However, I was able to
+                close out on the regression testing for a project at work. It took me over a week to finish thoroughly
+                with regression testing. Other than that, I just completed all other homeworks and finished several
+                HackerRank coding challenges that were sent to me.
+            </text>
+        </row>
+        <row>
+            <header>What's in your way?</header>
+            <text>
+                Midterm season is coming. I have an exam this Thursday for my literature class. I'm not fully prepared
+                for that exam, so I will be spending a lot of my time during the week on this. Additionally, I have all
+                projects/homework for other class due sometime during this week as well.
+            </text>
+        </row>
+        <row>
+            <header>What will you do next week?</header>
+            <text>
+                Other than having all the homeworks and projects due this week, I only have to plan on picking up my
+                friend from the airport on Friday. It will be my busiest week of the semester yet.
+            </text>
+        </row>
+        <row>
+            <header>What's my experience of the class?</header>
+            <text>
+                It's still going quite slow. I'm sure that it is only because I've taken OOP with Downing before.
+                However, I'm super excited for the group project. I will be working on the backend and database mostly.
+                I haven't started much, and I should.
+            </text>
+        </row>
+        <row>
+            <header>What's my pick-of-the-week or tip-of-the-week?</header>
+            <text>
+                My pick of the week is Memo.ai. It is a slack intergration that allows you and your team to take notes
+                more effectively. It also allows you to document your meetings, project plans, work progress much more
+                effectively. You can try it out for free for 14 days, then $10 per month for first 5 users. Check them
+                out here:<link href="http://www.memo.ai"> Memo.ai</link>
+            </text>
+        </row>
+
+    </content>
+</entry>

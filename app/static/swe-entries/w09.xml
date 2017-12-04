@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<entry>
+    <title description="10/23 - 10/29">Week 9</title>
+    <content>
+        <row>
+            <header>What did you do this past week?</header>
+            <text>
+                This past week, I worked a lot on the SWE project. Since we are hosting our on MySQL on the Google Cloud
+                Compute Engine, I have to make sure that it is up and running manually. It gives me a good experience to
+                host and work with a database. I wrote some Bash script that check for the database's upstate and
+                restart if necessary. Also, I installed a swapfile so that we can deal with the lowest amount of RAM
+                that avialable for always-free tier, which is 600 MB.
+            </text>
+        </row>
+        <row>
+            <header>What's in your way?</header>
+            <text>
+                I have data mining exam on Tuesday. Then, I have my sprint review at work. For this sprint review, I
+                will need to show the progress I've made on my new and last project at MaxPoint.
+            </text>
+        </row>
+        <row>
+            <header>What will you do next week?</header>
+            <text>
+                This coming week, on Monday, I will be studying for my Data Mining exam that is on Tuesday. I will be do
+                critical reading for some literary works for my English class, so that I can write an essay on them for
+                the upcoming week.
+            </text>
+        </row>
+        <row>
+            <header>What's my experience of the class?</header>
+            <text>
+                Since I've already been doing MySQL and database for the entire project's duration, the technical SQL
+                stuffs from lectures were not new to me. I appreciate Prof. Downing explaining all different kinds of
+                joins a lot, because it seems like a lot of people still can't distinguish each from another.
+            </text>
+        </row>
+        <row>
+            <header>What's my pick-of-the-week or tip-of-the-week?</header>
+            <text>
+                My pick-of-the-week is Trello API. It allows you to query down the information for the boards that you
+                have access to. This way, I will be able to make a simple web UI that will dynamically generate
+                information that I am interested to see. For example, I want to see unfinished tickets assigned to each
+                person and their progress all in a simple UI. I'm planning on developing something that I can customize
+                for my team.
+            </text>
+        </row>
+    </content>
+</entry>

@@ -35,7 +35,7 @@ def parse_swe_blog(post):
 def parse_swe_element(elem):
     print list(elem)
     if elem.tag == 'link':
-        return '<a href="{0}">{1}<a>'.format(elem.attrib['href'], elem.text)
+        return '<a href="{0}">{1}</a>'.format(elem.attrib['href'], elem.text)
 
 
 if __name__ == '__main__':

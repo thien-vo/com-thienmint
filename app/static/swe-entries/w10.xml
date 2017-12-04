@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<entry>
+    <title description="10/30 - 11/05">Week 10</title>
+    <content>
+        <row>
+            <header>What did you do this past week?</header>
+            <text>
+                This past week, I spent a lot of time studying for my Data Mining class and writing essay for my
+                literature class. I think I did fairly well on the Data Mining. Other than that, I spent some time
+                working problems on LeetCode to prepare myself for future technical interviews. I realize that your
+                technical background for an entry-level position isn't always required to be fantastic. They know you
+                won't have Senior level experience coming out of college. So, it all falls down to the interview a lot
+                of time.
+            </text>
+        </row>
+        <row>
+            <header>What's in your way?</header>
+            <text>
+                I have data mining exam on Tuesday. Then, I have my sprint review at work. For this sprint review, I
+                will need to show the progress I've made on my new and last project at MaxPoint.
+            </text>
+        </row>
+        <row>
+            <header>What will you do next week?</header>
+            <text>
+                This coming week, I will be working on SWE a lot. I will have to find a way to automatically deploy our
+                dev version of the website to compute engine instead of Flexible App Engine. Flexible App Engine is just
+                way too expensive to run our frontend. At the minimalist configuration, it still costs us about $1.50 a
+                day. Yes, the educational fund will last us through the semester, but I would like to keep the site up
+                and running for as long as possible.
+            </text>
+        </row>
+        <row>
+            <header>What's my experience of the class?</header>
+            <text>
+                The Regex lecture was very refreshing. I have been using regex a lot to convert repetitive Java code
+                into Scala. I didn't realize that a lot of people in class do not have the same kind of Regex
+                experience, so the lecture definitely was useful in introducing regex to everyone who hasn't worked with
+                it.
+            </text>
+        </row>
+        <row>
+            <header>What's my pick-of-the-week or tip-of-the-week?</header>
+            <text>
+                My pick-of-the-week is this video below. I've been around a lot of cats recently, and I have never seen
+                a cat who never jump to their food when given. It's just nice to sympathize with this mother cat.
+                <link href="https://www.youtube.com/watch?v=cH8Wya0WiuE"> Watch here!</link>
+            </text>
+        </row>
+    </content>
+</entry>

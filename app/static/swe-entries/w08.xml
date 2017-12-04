@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<entry>
+    <title description="10/16 - 10/22">Week 8</title>
+    <content>
+        <row>
+            <header>What did you do this past week?</header>
+            <text>
+                This past week, I finished a lot of works for my classes early. I got my HackerRank grades back for SWE
+                exam, and I did well. I'm happy with it. I also started to make my personal website at
+                <link href="http://www.thienmint.com"> www.thienmint.com</link>
+                . It is not finished, but I will start porting my blog over there soon. I'm using
+                Python and Flask to play more with the Jinja2 templating system. It's very neat. I got the website up
+                and running within just an hour.
+            </text>
+        </row>
+        <row>
+            <header>What's in your way?</header>
+            <text>
+                Some assignments are due this coming week. I've started on all of it. I just need to not procrastinate
+                and continue working on it until I'm finished. Other than that, I don't have much else to do for school,
+                and I'm going to start on a new project at work.
+            </text>
+        </row>
+        <row>
+            <header>What will you do next week?</header>
+            <text>
+                This coming week, I will be doing a lot of homework for this and the week after as well. I have another
+                music festival to go to next weekend, so I need to get myself ready for it and not lack behind
+                academically. I will also suggest to my boss and mentor that I should start working on a new project
+                concurrently with testing the already existing project.
+            </text>
+        </row>
+        <row>
+            <header>What's my experience of the class?</header>
+            <text>
+                I find this week's lectures on SQL stuff a little bit silly. I guess it wasn't very helpful for me
+                because I have done this kind of querying data from databases before. However, it was interesting to see
+                how */** in function defintion and function call applied here.
+            </text>
+        </row>
+        <row>
+            <header>What's my pick-of-the-week or tip-of-the-week?</header>
+            <text>
+                My pick-of-the-week is Dashlane. It s a password manager software that allows you to keep track of your
+                password in a secure environment. It automatically enable 2-factor authorization for unknown machines.
+                It also assess your password. It will tell you how weak your passwords are and the reasons why. It can
+                also automatically change your password for many many website, like Amazon. The free version is great if
+                you only want to use it on 1 machine, but the premium version is great for syncing across mutliple
+                devices. You should check it out!
+            </text>
+        </row>
+    </content>
+</entry>

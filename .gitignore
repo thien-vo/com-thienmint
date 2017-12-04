@@ -1,5 +1,6 @@
 .idea
 lib/
 *.pyc
+test.xml
 *.ipynb
 *.ipynb_checkpoints/

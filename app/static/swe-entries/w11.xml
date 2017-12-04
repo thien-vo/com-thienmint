@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<entry>
+    <title description="11/06 - 11/12">Week 11</title>
+    <content>
+        <row>
+            <header>What did you do this past week?</header>
+            <text>
+                This past week, I spent most of my time working on SWE project after taking my algorithm exam and
+                turning my essay for my literature class. Other members in my group were very busy with other classes
+                like compute graphics or visualization, so although I don't know a lot about ReactJS, I injected myself
+                into the frontend side of the project to help them out. We submitted everything about 1 minute away from
+                the deadline, so I don't know what it would be like if I hadn't helped implementing the filtering and
+                sorting.
+            </text>
+        </row>
+        <row>
+            <header>What's in your way?</header>
+            <text>
+                It is my last week at my internship, I will be pressured a little bit to finish everything up and hand
+                off the projects to other teams. Other than that, I will just have final exams lurking up very soon.
+                Also, I will ensure that all my team members start on the last phase of the project because I don't want
+                to be the one to spend 12-20 hours over 2 days working on all aspects of it.
+            </text>
+        </row>
+        <row>
+            <header>What will you do next week?</header>
+            <text>
+                I don't have a lot of things due for this coming week. However, this is the perfect time for me to start
+                preparing for my final exams for my other classes, so I will be doing that. I will also need to start
+                planning for my vacation plan for winter break. I'm just so excited for the coming break!
+            </text>
+        </row>
+        <row>
+            <header>What's my experience of the class?</header>
+            <text>
+                SQL stuff are really fun for me. I think the way Prof. Downing teach SQL is interesting. He purposely
+                shows the intuitive way to write SQL queries but wrong first. This way, he effectively introduces both
+                the right and wrong way to do things and the specific reasons why.
+            </text>
+        </row>
+        <row>
+            <header>What's my pick-of-the-week or tip-of-the-week?</header>
+            <text>
+                My pick-of-the-week an app called Forest.It is pretty much the gamification of a productivity app. You
+                play the game by growing trees. However, unlike a typical game, when you're growing your tree, you can't
+                use your phone at all or it will die. It's supposed to motivate you to stay off your phone after you've
+                set out a certain block of time commitment to focus on some task. You can choose from 15 - 120 minutes
+                duration. It's completely free, and if you buy the premium version, you get to label your focus block of
+                time and ability to unlock more different types of tree.
+            </text>
+        </row>
+    </content>
+</entry>

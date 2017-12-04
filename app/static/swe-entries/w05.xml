@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<entry>
+    <title description="09/25 - 10/01">Week 5</title>
+    <content>
+        <row>
+            <header>What did you do this past week?</header>
+            <text>
+                Wow, it's already October. This past week, I've worked on SWE project and finished my literature exam. I
+                am responsible for handling the database and platform, so it wasn't all neccessary to be done for the
+                first project. However, I got a head start on it with backend people, so upcoming projects should go
+                through a lot smoother.
+            </text>
+        </row>
+        <row>
+            <header>What's in your way?</header>
+            <text>
+                I have 2 more exams coming up on Monday and Tuesday: Algorithms exam and Data Mining exam. I've spent
+                most of my weekend studying for these 2 exams. Other than that, I just have to finish some projects at
+                work and start on the next one
+            </text>
+        </row>
+        <row>
+            <header>What will you do next week?</header>
+            <text>
+                After finishing my 2 exams for school, I will be focusing most of my time on finishing up my project at
+                work. I will have to schedule deployment and rollback accordingly, so it will be quite an effort.
+            </text>
+        </row>
+        <row>
+            <header>What's my experience of the class?</header>
+            <text>
+                We start to dig into more the detailed implementation and unique points of Python as a language. It's
+                quite fascinating to see the things that you can do so smoothly with Python. I enjoyed the lectures from
+                past week a lot.
+            </text>
+        </row>
+        <row>
+            <header>What's my pick-of-the-week or tip-of-the-week?</header>
+            <text>
+                My pick-of-the-week is PyBuilder. Analogous to Apache Maven and Scala-SBT, PyBuilder is continuous build
+                tool that allow you to manage dependencies, run scripts, unit tests and coverage, etc. Obviously, you
+                can all accomplish this with just a simple makefile. However, I find it interesting to use a python
+                library to handle this build part for a python project. I'm still learning more about it, and I like it
+                a lot. Moreover, it's 100% open-source, so maybe you can even contribute?!?
+            </text>
+        </row>
+    </content>
+</entry>

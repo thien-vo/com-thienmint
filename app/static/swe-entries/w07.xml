@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<entry>
+    <title description="10/09 - 10/15">Week 7</title>
+    <content>
+        <row>
+            <header>What did you do this past week?</header>
+            <text>
+                This past week, I discovered some new hidden works to be done for my project at work, so the project is
+                going to take quite a bit longer than expected. Other than that, I've spent a lot of time studying for
+                SWE exam on Thursday. I think that I did fairly well, just not as well as I hoped for. However, I'll be
+                sure to stay on top of my quizzes and projects to make up for that points lost. I also went to ACL over
+                the weekend. It was quite an experience for me.
+            </text>
+        </row>
+        <row>
+            <header>What's in your way?</header>
+            <text>
+                Some assignments are given out for all my classes already. I really need to push myself to get started
+                on those because it will all be due on the weekend of Halloween, which I will be out of town.
+            </text>
+        </row>
+        <row>
+            <header>What will you do next week?</header>
+            <text>
+                This coming week, I will be doing a lot of homework for this and the week after as well. I have another
+                music festival to go to during Halloween weekend, so I need to get myself ready for it and not lack
+                behind academically.
+            </text>
+        </row>
+        <row>
+            <header>What's my experience of the class?</header>
+            <text>
+                The way Prof Downing went over the difference in between */** in function definition and function call
+                really was helpful to me. It gave me a basic understanding of the difference functionalities of these
+                two symbols in two different context. I tried to read further about it through python documentation, and
+                I realized that there are a lot more details and precautions. I really enjoyed lectures this past week.
+            </text>
+        </row>
+        <row>
+            <header>What's my pick-of-the-week or tip-of-the-week?</header>
+            <text>
+                My pick-of-the-week is Gitlab. As an open-source project, GitLab provides many powerful development
+                tools like version control or Agile board, all with beautiful and user-friendly interface. You guys
+                should check it out!
+            </text>
+        </row>
+    </content>
+</entry>

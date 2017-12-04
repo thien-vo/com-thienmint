@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<entry>
+    <title description="10/02 - 10/08">Week 6</title>
+    <content>
+        <row>
+            <header>What did you do this past week?</header>
+            <text>
+                This past week, I don't have a lot of due assignments other than 2 midterms in algorithms and data
+                mining. I think did fairly well on both of them, so I'm hoping to get decent grades back. Other than
+                that, I spent a lot of time closing out my current project at work. I've also started on the database
+                for my project. After talking to Prof Downing about costly CloudSQL pricing plans, he suggested me
+                hosting it on a VM. I did that successfully, but I don't know what the workload will be for the always
+                free tier of compute engine. However, I'm sure that it's good enough for a development database so we do
+                not get charged every month.
+            </text>
+        </row>
+        <row>
+            <header>What's in your way?</header>
+            <text>
+                I hate to say it, but ACL is coming up for me next weekend. Although I'm not worrying about ACL itself,
+                I need to give the works that will be due the week right after ACL. I doubt that I would work over the
+                weekend while going to ACL at the same time.
+            </text>
+        </row>
+        <row>
+            <header>What will you do next week?</header>
+            <text>
+                I'm going to spend 1-2 days studying for SWE midterm and making a cheat sheet. After that, I will have
+                to start making notes and anaylsis for a literature paper that will be due after Halloween weekend. Next
+                Algorithm homework will also be out, so I'll be working on that.
+            </text>
+        </row>
+        <row>
+            <header>What's my experience of the class?</header>
+            <text>
+                We spent a lecture day for our TA to introduce us to ReactJS and how we will be using it for our
+                project. It was really helpful to get us started. ReactJS seems definitely hard to work with at first,
+                but I've walked through the tutorial and I can see how it helps smooth the website development process a
+                lot.
+            </text>
+        </row>
+        <row>
+            <header>What's my pick-of-the-week or tip-of-the-week?</header>
+            <text>
+                My pick-of-the-week is Todoist. It's a todo list application that has both wonderful UI and
+                well-integrated functions. If you're a developer, you would start thinking of your daily, weekly,
+                monthly or even long-term tasks as either some tickets or projects. Then for each task, you can break
+                them down into smaller tasks, assign due date, categories, etc. What I like most about Todoist is its
+                ability to schedule your tasks on a reoccurrence basis (weekly, monthly, every 10th day, etc.). Also,
+                the software is well-integrated across many platforms (Android, Windows, Mac, iOS, etc.)
+            </text>
+        </row>
+    </content>
+</entry>

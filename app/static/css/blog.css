@@ -28,3 +28,7 @@
 .swe-post {
     margin-left: 5%;
 }
+
+.swe-post p {
+    color: #000000;
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<entry>
+    <title description="Fall 2017 CS 373">Summary</title>
+    <content>
+        <row>
+            <header>How do I feel overall about CS 373: Software Engineering, Fall 2017?</header>
+            <text>
+                Overall, I feel like that I've learn a great deal from the class in retrospective to my internship last summer.
+                I can attest that the class model after the industry's working environment with its semester-long
+                project.
+                You have to cooperate with a team of people with different skill sets and levels, background,
+                personalities.
+                You're also expected to learn new technologies for the job with little to no guidance.
+                The exams are fair; if you give some effort in studying, you'll do very well.
+                An good/bad thing with doing test via Canvas/HackerRank is that you will know your grade right away.
+                However, to review your questions and answers, you will have to go out of your way to do that by coming
+                to TA office hours and such.
+                One thing that you must be prepare for the class is the all the daily quizzes.
+                They are a big chunk of your grade, and unless you have taken a class with Prof. Downing before, you're
+                very likely to have a hard time adapting to his quiz style.
+                About the quiz style, they're all related to his previous classes or assigned readings.
+                So, making sure you come to every lecture will help you in the long run.
+            </text>
+        </row>
+        <row>
+            <header>How do I feel about the semester-long group project?</header>
+            <text>
+                I learned a lot from working with my team of 4.
+                I feel like the project itself doesn't teach me anything directly (of course, nothing really does).
+                What it gives me is the perfect learning environment in which I can choose a role (in my case, platform
+                and database) to develop on.
+                What it also gives you is the modeling of deadline stresses in the industry.
+                You have these tight deadlines that keep coming up one after another that will make you want to start on
+                each phase very early on.
+                Yes, you will have a lot of those "Ugh" moments when you're stuck with an issue that no one on your team
+                can really help you.
+                This is what I find very interesting, because you will have to ask other teams in class for the person
+                who also work on the same stuffs that you work on for help.
+                This cross-team cooperation done through Piazza is amazing, and it is really relevant in the industry.
+                Especially if your future company use any open-source software, you will have to cooperate with the
+                online community to figure out a lot of problems eventually.
+                Overall, I'd say that the semester-long group project is the most valuable experience that I got out of
+                the class.
+            </text>
+        </row>
+        <row>
+            <header>How do I feel about the materials covered from class lectures?</header>
+            <text>
+                I think some of them are repetitive considered the knowledge that I already have about Python and SQL.
+                I did learn about some neat detail stuffs about Python like parameters/functions packing/unpacking.
+                However, if you have a lot of experience working with Python and SQL, don't expect to learn a lot of new
+                advanced things from the class.
+                Overall, I would consider CS 373 to be an Beginner/Intermediate level class for Python and definitely a
+                Beginner level class for SQL.
+            </text>
+        </row>
+        <row>
+            <header>How could the class be better?</header>
+            <text>
+                Personally, I would have preferred Prof. Downing to spend less time on SQL stuff.
+                I think that is very covered very well across the internet.
+                I would have loved more lectures on how Python fit into a bigger project.
+                Before working with Python much, I always consider Python to be a language that cannot be incorporated
+                to scale a bigger project.
+                Although there are some truth in how it's hard to scale them, it's not quite impossible.
+                I would have loved a lot more lectures on the good practices to be a Python programmer (talking about
+                coding conventions, styles, dos/dont)
+            </text>
+        </row>
+
+    </content>
+</entry>

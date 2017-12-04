@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<entry>
+    <title description="08/28 - 09/03">Week 1</title>
+    <content>
+        <row>
+            <header>What did you do this past week?</header>
+            <text>
+                This past week, I've been doing a lot of reading form my literature class and do a lot of interview prep
+                practice. I went on a hike on Saturday then spent the rest of the weekend working on Data Mining and
+                SWE. Data Mining took me over 6-7 hours to complete, but now I don't have to worry about it during the
+                week. I've spent about 5 hours working on SWE, and I couldn't get it. I feel like I should have taken a
+                break and talk with a TA or something.
+            </text>
+        </row>
+        <row>
+            <header>What is in your way?</header>
+            <text>
+                SWE project took me a little bit by surprise. The problem was a little bit different from what I did for
+                OOP. I've tried 2 different types of cache, but neither was fast enough for HackerRank. I'll try my last
+                option tomorrow.
+            </text>
+        </row>
+        <row>
+            <header>What will you do next week?</header>
+            <text>
+                I have quite a few things to prepare for prior to the careers fair. I'd like to revamp my personal
+                website and put it on a more professional domain. However, my first priority is still practicing my
+                pitch and review companies' hiring positions.
+            </text>
+
+        </row>
+        <row>
+            <header>What is my experience of the class?</header>
+            <text>
+                I feel like Prof. Downing is less prepared for SWE than he was for OOP. That being said, the class
+                overall is still very organized and well-structured compared to a lot of other CS classes I've taken.
+            </text>
+        </row>
+        <row>
+            <header>What is my pick-of-the-week or tip-of-the-week?</header>
+            <text>
+                I would recommend who doesn't know about Jupyter iPython Notebook to check it out. It has helped me work
+                so much quicker on the project so far. Installing and setting it up are easy. Once done, you can have a
+                quick and pretty interactive UI for running python. You can read more here.
+            </text>
+        </row>
+    </content>
+</entry>

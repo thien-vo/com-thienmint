@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<entry>
+    <title description="REPLACE">REPLACE</title>
+    <content>
+        <row>
+            <header>What did you do this past week?</header>
+            <text>
+                REPLACE
+            </text>
+        </row>
+        <row>
+            <header>What's in your way?</header>
+            <text>
+                REPLACE
+            </text>
+        </row>
+        <row>
+            <header>What will you do next week?</header>
+            <text>
+                REPLACE
+            </text>
+        </row>
+        <row>
+            <header>What's my experience of the class?</header>
+            <text>
+                REPLACE
+            </text>
+        </row>
+        <row>
+            <header>What's my pick-of-the-week or tip-of-the-week?</header>
+            <text>
+                REPLACE
+            </text>
+        </row>
+
+    </content>
+</entry>

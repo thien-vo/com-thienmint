@@ -1,4 +1,4 @@
-{% with title=title|default("Entry | Blog", true) %}
+{% with title=head_title|default("Entry | Blog", true) %}
     {% include 'defaults/head.html' %}
 {% endwith %}
 
@@ -14,7 +14,7 @@
             {% with entry_infos= entry_infos|default([{'header': 'Default Header', 'text': 'Default Text'}], true) %}
                 {% for row in entry_infos %}
                     <h2> {{ row['header'] }} </h2>
-                    <p> {{ row['text'] }}</p>
+                    <p> {{ row['text']|safe }}</p>
                 {% endfor %}
             {% endwith %}
         </div>

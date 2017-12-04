@@ -1,7 +1,7 @@
 <div class="row banner">
     <div class="banner-text">
         <h1 class="responsive-headline">Blog</h1>
-        <h3><span>{{ week|default("Week : 00/00-00/00") }}</span></h3>
+        <h3><span>{{ banner_title|default("Week : 00/00-00/00") }}</span></h3>
         <hr />
         <ul class="rslides" id="slider3">
             {% with quotes=[

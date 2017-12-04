@@ -9,6 +9,7 @@ from flask_mail import Mail, Message
 from email_info import get_info
 from blog_parser import parse_swe_blog
 # Regex
+import xml.etree.ElementTree as ET
 import re
 # [END imports]
 
@@ -40,29 +41,26 @@ def blog():
 
 
 @app.route('/blog/swe')
-@app.route('/blog/swe/<week>')
-def swe(week=None):
-    if week is None:
+@app.route('/blog/swe/<name>')
+def swe(name=None):
+    if name is None:
         return page_not_found(NotImplementedError)
 
     try:
-        f = open('static/swe-entries/{0}.txt'.format(str(week)))
+        f = app.open_resource('static/swe-entries/{0}.xml'.format(str(name)))
     except IOError:
         return page_not_found(IOError)
-    m = re.search(r'(w)(\d+)', str(week))
-    num_week = int(m.group(2))
 
-    data = f.readlines()
-    headers, texts = parse_swe_blog(data)
+    post = ET.parse(f)
+    banner_title, headers, texts = parse_swe_blog(post)
     entry_infos = [{
         'header': h,
-        'text': t} for (h,t) in zip(headers, texts)]
+        'text': t} for (h, t) in zip(headers, texts)]
 
     return render_template('blog/swe/template.html',
-                           title='SWE: Week {0} | Blog'.format(num_week),
+                           head_title='SWE: {0} | Blog'.format(banner_title.split(":")[0]),
                            entry_infos=entry_infos,
-                           week="Week {0}".format(num_week))
-
+                           banner_title="{0}".format(banner_title))
 
 
 @app.route('/send_message', methods=['POST'])

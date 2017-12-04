@@ -11,6 +11,7 @@ from blog_parser import parse_swe_blog
 # Regex
 import xml.etree.ElementTree as ET
 import re
+import os
 # [END imports]
 
 # [START create_app]
@@ -41,8 +42,30 @@ def blog():
 
 
 @app.route('/blog/swe')
+def swe():
+    swe_entry_path = os.path.join(app.static_folder, 'swe-entries')
+
+    files = os.listdir(swe_entry_path)
+
+    exclusion = ['template.xml']
+    for exclude_file in exclusion:
+        if exclude_file in files:
+            files.remove(exclude_file)
+
+    title_list = []
+    for file_name in files:
+        if not file_name.endswith('.xml'):
+            continue
+
+        post = ET.parse(os.path.join(swe_entry_path, file_name))
+        banner_title, headers, texts = parse_swe_blog(post)
+        title_list.append(banner_title)
+
+    return str(sorted(title_list))
+
+
 @app.route('/blog/swe/<name>')
-def swe(name=None):
+def swe_entry(name=None):
     if name is None:
         return page_not_found(NotImplementedError)
 

@@ -41,9 +41,9 @@
 
                     <h2>Contact Details</h2>
                     <p class="address">
-                        <span>Thien Vo</span><br>
-                        <span>(512) 954-4289</span><br>
-                        <span>thienqvo@gmail.com</span>
+                        <span>{{ user_info['first_name'] + ' ' + user_info['last_name'] }}</span><br>
+                        <span>{{ user_info['phone'] }}</span><br>
+                        <span>{{ user_info['email'] }}</span>
                     </p>
 
                 </div>

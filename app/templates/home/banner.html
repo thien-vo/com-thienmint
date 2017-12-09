@@ -1,8 +1,8 @@
 <div class="row banner">
     <div class="banner-text">
-        <h1 class="responsive-headline">I'm Thien Vo</h1>
-        <h3>I'm an Austin based <span>software developer</span>.
-            Let's learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
+        <h1 class="responsive-headline">Hey! I'm Thien</h1>
+        <h3>I'm an Austin based <span>software developer</span>. <br/>
+            Check out information <a class="smoothscroll" href="#about">about me</a> below!</h3>
         <hr />
         <ul class="social">
             <li><a href="https://www.facebook.com/thienminty"><i class="fa fa-facebook"></i></a></li>
@@ -10,20 +10,7 @@
             <li><a href="https://www.github.com/thienmint"><i class="fa fa-github"></i></a></li>
         </ul>
         <ul class="rslides" id="slider3">
-            {% with quotes=[
-            {
-                'text': '"If we knew each other\'s secrets, what comfort we should find."',
-                'person': 'John Churton Collins'
-            },
-            {
-                'text': '"Someday this pain will be useful to you."',
-                'person': 'Peter Cameron'
-            },
-            {
-                'text': '"Computer always do what they tell you to do"',
-                'person': 'Mark Zuckerberg'
-            },
-            ]%}
+            {% with quotes=quotes|default([], true) %}
                 {% for quote in quotes %}
                     <li class="slider-info">
                         <p> {{ quote['text'] }} </p>

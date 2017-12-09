@@ -23,6 +23,43 @@ app.config['MAIL_PASSWORD'] = email_password
 mail = Mail(app)
 # [END create_app]
 
+# [START constants]
+
+quotes = [
+    {
+        'text': '"If we knew each other\'s secrets, what comfort we should find."',
+        'person': 'John Churton Collins'
+    },
+    {
+        'text': '"Someday this pain will be useful to you."',
+        'person': 'Peter Cameron'
+    },
+    {
+        'text': '"You don\'t need to be a genius to code. You need to be determined."',
+        'person': 'Vanessa Hurst'
+    },
+]
+
+user_info = {
+    'first_name': 'Thien',
+    'last_name': 'Vo',
+    'middle_name': 'Quang',
+    'phone': '(512) 954-4289',
+    'email': 'thienqvo@gmail.com'
+}
+
+
+@app.context_processor
+def inject_quotes():
+    return dict(quotes=quotes)\
+
+
+
+@app.context_processor
+def inject_user_info():
+    return dict(user_info=user_info)
+
+# [END constants]
 # [START routing]
 
 

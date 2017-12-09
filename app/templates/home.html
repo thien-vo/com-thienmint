@@ -5,7 +5,7 @@
 
 {% import 'home/navbar.html' as home_navbar %} {#Unused#}
 
-{% import 'home/banner.html' as home_banner %}
+{% import 'home/banner.html' as home_banner with context%}
 
 {% with navbar=home_navbar, banner=home_banner %}
     {% include 'defaults/header.html' %}
@@ -13,7 +13,7 @@
 
 <body>
 
-{% include 'home/about.html' %}
+{% include 'home/about.html' with context%}
 
 {% with skill_list=[
     {'mastery' : '86%', 'name' : 'Scala'},
@@ -28,7 +28,7 @@
 
 {#{% include 'home/testimonials.html' %}#}
 
-{% include 'home/contact.html' %}
+{% include 'home/contact.html' with context%}
 </body>
 
 

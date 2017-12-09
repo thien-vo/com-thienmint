@@ -1,23 +1,10 @@
 <div class="row banner">
     <div class="banner-text">
-        <h1 class="responsive-headline">Blog</h1>
+        <h1 class="responsive-headline">{{ banner_headline|default("Blog") }}</h1>
         <h3><span>{{ banner_title|default("Week : 00/00-00/00") }}</span></h3>
         <hr />
         <ul class="rslides" id="slider3">
-            {% with quotes=[
-            {
-                'text': '"If we knew each other\'s secrets, what comfort we should find."',
-                'person': 'John Churton Collins'
-            },
-            {
-                'text': '"Someday this pain will be useful to you."',
-                'person': 'Peter Cameron'
-            },
-            {
-                'text': '"Computer always do what they tell you to do"',
-                'person': 'Mark Zuckerberg'
-            },
-            ]%}
+            {% with quotes=quotes|default([], true) %}
                 {% for quote in quotes %}
                     <li class="slider-info">
                         <p> {{ quote['text'] }} </p>

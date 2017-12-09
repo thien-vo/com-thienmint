@@ -73,9 +73,9 @@
 
                 <h4>Address and Phone</h4>
                 <p class="address">
-                    Thien Vo<br>
-                    thienqvo@gmail.com <br>
-                    <span>(512) 954-4289</span>
+                    {{ user_info['first_name'] + ' ' + user_info['last_name'] }}<br>
+                    {{ user_info['email'] }} <br>
+                    <span>{{ user_info['phone'] }}</span>
                 </p>
 
             </div>

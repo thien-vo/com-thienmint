@@ -7,11 +7,12 @@ from flask_mail import Mail, Message
 
 # Custom stuff
 from email_info import get_info
-from blog_parser import parse_swe_blog
+from blog_parser import parse_swe_blog, make_preview
 # Regex
 import xml.etree.ElementTree as ET
 import re
 import os
+from operator import itemgetter, attrgetter
 # [END imports]
 
 # [START create_app]
@@ -85,20 +86,28 @@ def swe():
     files = os.listdir(swe_entry_path)
 
     exclusion = ['template.xml']
+    # Remove all files from exclusions list from listing
     for exclude_file in exclusion:
         if exclude_file in files:
             files.remove(exclude_file)
 
-    title_list = []
+    entries_list = []
+    # Compile a list of all SWE blog's entries
     for file_name in files:
         if not file_name.endswith('.xml'):
             continue
 
         post = ET.parse(os.path.join(swe_entry_path, file_name))
-        banner_title, headers, texts = parse_swe_blog(post)
-        title_list.append(banner_title)
+        parse_items = parse_swe_blog(post)
 
-    return render_template('blog/swe.html', title_list=str(sorted(title_list)))
+        id = parse_items['id']
+        title = parse_items['title']
+        file_name = re.sub('\.xml', '', file_name)
+        preview = make_preview(parse_items['headers'], parse_items['texts'])
+
+        entries_list.append(dict(id=int(id), file_name=file_name, preview=preview, title=title))
+
+    return render_template('blog/swe.html', entries_list=sorted(entries_list, key=lambda entry: entry['id']))
 
 
 @app.route('/blog/swe/<name>')
@@ -112,12 +121,16 @@ def swe_entry(name=None):
         return page_not_found(IOError)
 
     post = ET.parse(f)
-    banner_title, headers, texts = parse_swe_blog(post)
+    parse_items = parse_swe_blog(post)
+    headers = parse_items['headers']
+    texts = parse_items['texts']
+    banner_title = parse_items['title']
+
     entry_infos = [{
         'header': h,
         'text': t} for (h, t) in zip(headers, texts)]
 
-    return render_template('blog/swe/entry/template.html',
+    return render_template('blog/swe/template.html',
                            head_title='SWE: {0} | Blog'.format(banner_title.split(":")[0]),
                            entry_infos=entry_infos,
                            banner_title="{0}".format(banner_title))

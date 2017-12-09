@@ -10,7 +10,18 @@
 
 <body>
     <section id="swe-listing">
-        {{ title_list }}
+        <div class="swe-post"}>
+            {% with entries_list= entries_list|default([], true) %}
+                {% for entry_item in entries_list %}
+                    {% with preview = entry_item['preview'] %}
+                        <h1><a href="/blog/swe/{{ entry_item['file_name'] }}">{{ entry_item['title'] }}</a></h1>
+                        <h2>{{ preview['header'] }}</h2>
+                        <p>{{ preview['text'] }}</p>
+                    {% endwith %}
+                    <hr>
+                {% endfor %}
+            {% endwith %}
+        </div>
     </section>
 </body>
 

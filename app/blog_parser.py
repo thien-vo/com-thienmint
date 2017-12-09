@@ -4,6 +4,7 @@ import re
 
 def parse_swe_blog(post):
     entry = post.getroot()
+    id = entry.find('id').text
     title = entry.find('title').text
     content = entry.find('content')
 
@@ -29,12 +30,22 @@ def parse_swe_blog(post):
         headers.append(header)
         texts.append(final_text)
 
-    return title, headers, texts
+    return dict(id=id, title=title, headers=headers, texts=texts)
 
 
 def parse_swe_element(elem):
     if elem.tag == 'link':
         return '<a href="{0}">{1}</a>'.format(elem.attrib['href'], elem.text)
+
+
+def make_preview(headers, texts):
+    if len(headers) <= 0 or len(texts) <= 0:
+        return "", ""
+
+    header = headers[0][:100]
+    text = texts[0][:250] + ' ...'
+
+    return dict(header=header, text=text)
 
 
 if __name__ == '__main__':

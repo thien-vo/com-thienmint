@@ -98,7 +98,7 @@ def swe():
         banner_title, headers, texts = parse_swe_blog(post)
         title_list.append(banner_title)
 
-    return str(sorted(title_list))
+    return render_template('blog/swe.html', title_list=str(sorted(title_list)))
 
 
 @app.route('/blog/swe/<name>')
@@ -117,7 +117,7 @@ def swe_entry(name=None):
         'header': h,
         'text': t} for (h, t) in zip(headers, texts)]
 
-    return render_template('blog/swe/template.html',
+    return render_template('blog/swe/entry/template.html',
                            head_title='SWE: {0} | Blog'.format(banner_title.split(":")[0]),
                            entry_infos=entry_infos,
                            banner_title="{0}".format(banner_title))

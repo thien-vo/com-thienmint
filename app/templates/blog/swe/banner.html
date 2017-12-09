@@ -1,7 +1,7 @@
 <div class="row banner">
     <div class="banner-text">
-        <h1 class="responsive-headline">{{ banner_headline|default("Blog") }}</h1>
-        <h3><span>{{ banner_title|default("Week : 00/00-00/00") }}</span></h3>
+        <h1 class="responsive-headline">{{ banner_headline|default("SWE Blog") }}</h1>
+        <h3>Include all the SWE posts <span>below.</span></h3>
         <hr />
         <ul class="rslides" id="slider3">
             {% with quotes=quotes|default([], true) %}
@@ -17,5 +17,5 @@
 </div>
 
 <p class="scrolldown">
-    <a class="smoothscroll" href="#swe-entry"><i class="icon-down-circle"></i></a>
+    <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
 </p>

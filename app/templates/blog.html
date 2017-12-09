@@ -2,14 +2,16 @@
     {% include 'defaults/head.html' %}
 {% endwith %}
 
-{% import 'blog/banner.html' as home_banner %}
+{% import 'blog/banner.html' as blog_banner with context%}
 
-{% with banner=home_banner %}
+{% with banner=blog_banner %}
     {% include 'defaults/header.html' %}
 {% endwith%}
 
 <body>
-Empty Body
+    <section id="blog-listing"}>
+       Empty section
+    </section>
 </body>
 
 

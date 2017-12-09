@@ -101,6 +101,19 @@
      /*----------------------------------------------------*/
      /*	Modal Popup
      ------------------------------------------------------*/
+     $(window).on('load', function () {
+         $('.portfolio-text-stylized').each(function () {
+             let elem = $( this );
+             elem.textfill({ maxFontPixels: -1 });
+
+             elem.css('color', '#ffffff');
+             elem.css('background', '#000000');
+         });
+     });
+
+     $(window).on('resize', function () {
+         $('.portfolio-text-stylized').textfill({ maxFontPixels: -1 });
+     });
 
      $('.item-wrap a').magnificPopup({
 

@@ -769,6 +769,32 @@ ul#nav li.current a {
     opacity: 0;
 }
 
+/*Customized stuff */
+.portfolio-text-dummy {
+    margin-top: 100%;
+}
+
+.portfolio-text-stylized {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+    background: #000000;
+    text-align: center;
+    font-family: 'Carter One', cursive;
+}
+
+.portfolio-text-stylized span {
+    display: inline-flex;
+    align-items: center;
+    line-height: 100%;
+}
+
+
+
 /* ------------------------------------------------------------------ */
 /* f. Call To Action Section
 /* ------------------------------------------------------------------ */
